@@ -9,6 +9,8 @@ export default function Calculator() {
       <Box m={5} />
       <Container maxWidth="xs">
         <div className='wrapper'>
+            <Box m={12} />
+            <h1 className='result'>01</h1>
             <button>AC</button>
             <button>+/-</button>
             <button>%</button>

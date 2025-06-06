@@ -32,3 +32,12 @@ button:hover {
     width: 6.7em;
     padding-right: 4em;
 }
+
+.result {
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    margin-right: .5em;
+    font-size: 3em;
+    font-family: 'Lucida Sans Regular';
+}
