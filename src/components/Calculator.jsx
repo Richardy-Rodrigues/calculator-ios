@@ -22,6 +22,7 @@ export default function Calculator() {
 
   function clearDisplay() {
     setNumber(0);
+    setNumberOld(0);
   }
 
   function percent(){
@@ -59,6 +60,7 @@ export default function Calculator() {
     if (operator == '+') {
       setNumber(parseFloat(numberOld) + parseFloat(number))
     }
+    setNumberOld(0);
   }
 
   return (
@@ -66,7 +68,8 @@ export default function Calculator() {
       <Box m={5} />
       <Container maxWidth="xs">
         <div className='wrapper'>
-            <Box m={12} />
+            <h2 className='result-historic'>{numberOld == 0 ? number : (`${numberOld} ${operator} ${number}`) } </h2>
+            <Box m={10} />
             <h1 className='result'>{number}</h1>
             <button onClick={clearDisplay}>AC</button>
             <button onClick={changeSign}>+/-</button>

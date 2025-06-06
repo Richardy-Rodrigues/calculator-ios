@@ -41,3 +41,11 @@ button:hover {
     font-size: 3em;
     font-family: 'Lucida Sans Regular';
 }
+
+.result-historic {
+    color: #505050;
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    font-family: 'Lucida Sans Regular';
+}
